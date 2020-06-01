@@ -73,6 +73,9 @@ def turn
   end
 end
 
+#another solution
+#def won?         WIN_COMBINATIONS.any? do |combo|             if position_taken?(combo[0]) && @board[combo[0]] == @board[combo[1]] && @board[combo[1]] == @board[combo[2]]                 return combo             end         end     end
+
 def won?
   WIN_COMBINATIONS.each {|win_combo|
     index_0 = win_combo[0]
